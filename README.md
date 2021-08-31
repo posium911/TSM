@@ -190,7 +190,7 @@ python test_models.py kinetics \
 python test_models.py kinetics \
     --weights=pretrained/TSM_kinetics_RGB_resnet50_shift8_blockres_avg_segment8_e100_dense_nl.pth \
     --test_segments=8 --test_crops=3 \
-    --batch_size=8 --dense_sample --full_res
+    --batch_size=8 --dense_sample --full_res  #nonlocal 추가 하려면 --non_local 추가 해야 할것 같음 
 ```
 
 You should get around 70.6%, 74.1%, 75.6% top-1 accuracy, as shown in Table 1.
